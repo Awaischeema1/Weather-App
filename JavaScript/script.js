@@ -53,22 +53,22 @@ function weatherDetails(info) {
         const {feels_like,humidity,temp} = info.main;
 
         if(id == 800){
-            wIcon.src = '/Icons/clear.svg';
+            wIcon.src = '/Icons/clear.SVG';
         }
         else if(id >= 200 && id <= 232){
-            wIcon.src = '/Icons/strom.svg';
+            wIcon.src = '/Icons/strom.SVG';
         }
         else if(id >= 600 && id <= 622){
-            wIcon.src = '/Icons/snow.svg';
+            wIcon.src = '/Icons/snow.SVG';
         }
         else if(id >= 701 && id <= 781){
-            wIcon.src = '/Icons/haze.svg';
+            wIcon.src = '/Icons/haze.SVG';
         }
         else if(id >= 801 && id <= 804){
-            wIcon.src = '/Icons/cloud.svg';
+            wIcon.src = '/Icons/cloud.SVG';
         }
         else if(id >= 300 && id <= 321 || id >= 500 && id <= 531){
-            wIcon.src = '/Icons/rain.svg';
+            wIcon.src = '/Icons/rain.SVG';
         }
 
         container.querySelector('.temp .numb').innerText = Math.round(temp);
