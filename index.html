@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+   <div class="container">
+    <header class="flex">
+        <i class="fa-solid fa-arrow-left"></i> Weather App
+    </header>
+
+    <!-- location and input  -->
+    <section class="location-input">
+        <p class="info-text">Please enter a valid city name</p>
+        <input type="text" placeholder="Enter city name" required>
+        <div class="divder flex"></div>
+        <button>Get Device Location</button>
+    </section>
+
+    <!-- details section  -->
+    <section class="weather-details flex">
+        <img src="./Icons/cloud.svg" alt="weather-icon">
+        <div class="temp">
+            <span class="numb">13</span>
+            <span class="deg">°</span>C
+        </div>
+        <div class="weather">Broken Clouds</div>
+        <div class="location flex">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Lahore,Pakistan</span>
+        </div>
+        <div class="bottom-details flex">
+            <div class="colum feels">
+                <i class="fa-solid fa-temperature-empty"></i>
+                <div class="details">
+                    <div class="temp">
+                        <span class="numb-2">13</span>
+                        <span class="deg">°</span>C
+                    </div>
+                    <p>Feels Like</p>
+                </div>
+            </div>
+            <div class="colum humidity">
+                <i class="fa-solid fa-droplet"></i>
+                <div class="details">
+                        <span>84%</span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+        </div>
+    </section>
+   </div>
+</body>
+</html>
